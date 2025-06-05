@@ -30,11 +30,7 @@ class Stack
     int push(int value)
     {
         Node *newNode = new Node(); //1. Allocate memory for the new node
-        newNode->data = value;      //2. assign value
-        newNode->next = top;        //3. set the next pointer of the new node to the current
-        top = newNode;
-        cout << "Push value: " << value << endl;
-        return value;
+       
     }
 
     // IsEmpety operation: Check if the stack is empety
@@ -104,7 +100,16 @@ int main()
         case 3:
         stack.peek();
         break;
-        
+        case 4:
+        cout << "Exiting program." << endl;
+        break;
+        default:
+        cout << "Invalid choice. Try again." << endl;
+        break;
        }
+
+       cout << endl;
     }
+
+    return 0;
 }
