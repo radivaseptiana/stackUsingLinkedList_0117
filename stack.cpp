@@ -50,7 +50,9 @@ class Stack
         {
             cout << "Stack is empety." << endl;
             return; // if the stack is empety, print a message and return
-       
+        }
+        cout << "Popped value: " << top->data << endl;
+        top = top->next; // Update the top pointer to the next node
     }
 
     //Peek/top operation: Retrieve the value of the topmost element without removing it
@@ -60,16 +62,7 @@ class Stack
         {
             cout << "List is empety." << endl;
             return; // if the stack is empety, print a message and return
-        }
-        else
-        {
-            Node *current = top;
-            while (current != NULL)
-            {
-                cout << current->data << " " << endl;
-                current = current->next;
-            }
-            cout << endl;
+      
         } //Return the value of the top node
     }
 };
