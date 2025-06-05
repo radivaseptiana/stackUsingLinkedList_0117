@@ -29,11 +29,17 @@ class Stack
     // Push operation: Insert an element into the top of the stack
     int push(int value)
     {
-        Node *newNode = new Node(); 
-        newNode->data = value;
-        newNode->next = top;
+        Node *newNode = new Node(); //1. Allocate memory for the new node
+        newNode->data = value;      //2. assign value
+        newNode->next = top;        //3. set the next pointer of the new node to the current
         top = newNode;
         cout << "Push value: " << value << endl;
         return value;
+    }
+
+    // IsEmpety operation: Check if the stack is empety
+    bool isEmpety()
+    {
+        return top == NULL; // Return true if the top pointer is NULL, indicating an empety stack
     }
 }
