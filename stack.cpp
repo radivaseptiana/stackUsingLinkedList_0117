@@ -38,7 +38,7 @@ class Stack
     }
 
     // IsEmpety operation: Check if the stack is empety
-    bool isEmpety()
+    
     {
         return top == NULL; // Return true if the top pointer is NULL, indicating an empety stack
     }
