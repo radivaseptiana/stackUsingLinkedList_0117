@@ -42,4 +42,14 @@ class Stack
     {
         return top == NULL; // Return true if the top pointer is NULL, indicating an empety stack
     }
+
+    // Pop operation: Remove the topmost element from the stack
+    void pop()
+    {
+        if (isEmpety())
+        {
+            cout << "Stack is empety." << endl;
+            return; // if the stack is empety, print a message and return
+        }
+    }
 }
