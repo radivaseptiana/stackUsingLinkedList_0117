@@ -38,7 +38,7 @@ class Stack
     }
 
     // IsEmpety operation: Check if the stack is empety
-    
+    bool isEmpety()
     {
         return top == NULL; // Return true if the top pointer is NULL, indicating an empety stack
     }
@@ -50,9 +50,7 @@ class Stack
         {
             cout << "Stack is empety." << endl;
             return; // if the stack is empety, print a message and return
-        }
-        cout << "Popped value: " << top->data << endl;
-        top = top->next; // Update the top pointer to the next node
+       
     }
 
     //Peek/top operation: Retrieve the value of the topmost element without removing it
