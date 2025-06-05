@@ -25,4 +25,15 @@ class Stack
     {
         top = NULL; // Initialize the stack with a null top pointer
     }
+
+    // Push operation: Insert an element into the top of the stack
+    int push(int value)
+    {
+        Node *newNode = new Node(); 
+        newNode->data = value;
+        newNode->next = top;
+        top = newNode;
+        cout << "Push value: " << value << endl;
+        return value;
+    }
 }
