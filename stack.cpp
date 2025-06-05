@@ -57,4 +57,21 @@ class Stack
 
     //Peek/top operation: Retrieve the value of the topmost element without removing it
     void peek()
+    {
+        if (isEmpety())
+        {
+            cout << "List is empety." << endl;
+            return; // if the stack is empety, print a message and return
+        }
+        else
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data << " " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        } //Return the value of the top node
+    }
 }
